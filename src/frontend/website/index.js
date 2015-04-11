@@ -6,7 +6,7 @@ function displayc() {
 function displayct() {
 	var strcount;
 	var x = new Date();
-	document.getElementById('ct').innerHTML = x;
+	//document.getElementById('ct').innerHTML = x;
 	tt=displayc();
 }
 
@@ -21,6 +21,7 @@ function displayLog() {
 
 function displayt() {
 	var y = new Date();
+	//var z = y.getTime()
 	document.getElementById('t').innerHTML = y;
 	yy = displayt();
 }

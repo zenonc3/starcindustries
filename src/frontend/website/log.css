@@ -4,10 +4,21 @@ body{
 	width:100%;
 	font-family: myFirstFont;
     background-color: black;
+    overflow:hidden;
 }
 
 h1{
-	color: black;
+	color: #12C9FD;
+}
+
+div.scroll {
+    background-color: black;
+    width: 1000px;
+    height: 400px;
+    overflow-x: hidden;
+    position: center;
+    color: #12C9FD;
+    margin: 0 auto;
 }
 
 #first{
@@ -19,16 +30,16 @@ h1{
 
 #content{
 	text-align: center;
-    color:white;
+    color:#12C9FD;
 }
 
 #footer {
 	text-align: center;
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background:white;
+   	position:absolute;
+   	bottom:0;
+   	width:100%;
+   	height:60px;   /* Height of the footer */
+   	background:white;
 }
 
 

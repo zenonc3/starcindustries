@@ -19,9 +19,11 @@ h1{
 
 #content{
 	text-align: center;
-    color:white;
+    color:#12C9FD;
 }
-
+.container-outer { overflow-x: hidden; width: 1000px; height: 600px;    margin-left: 10%;
+  margin: 0 auto;; }
+.container-inner { width: 10000px; }
 .container {
   position: relative;
   height: 660px;
@@ -33,17 +35,6 @@ h1{
 .container a {
   float: left;
   margin: 20px;
-}
- 
-.big {
-  position: absolute;
-  top: 260px;
-  left: 20px;
-  -webkit-transition: top 1s ease;
-  -moz-transition: top 1s ease;
-  -o-transition: top 1s ease;
-  -ms-transition: top 1s ease;
-  transition: top 1s ease;
 }
 
 .featured {
