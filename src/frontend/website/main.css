@@ -2,7 +2,8 @@ body{
 	margin:0;
 	height:100%;
 	width:100%;
-	font-family: myFirstFont
+	font-family: myFirstFont;
+    background-color: black;
 }
 
 h1{
@@ -10,7 +11,7 @@ h1{
 }
 
 #first{
-	padding-top: 250px;
+	padding-top: 200px;
 	padding-bottom: 50px;
 	text-align: center;
 	height:100%;
@@ -18,8 +19,7 @@ h1{
 
 #content{
 	text-align: center;
-	background-color: grey;
-
+    color:white;
 }
 
 #footer {
@@ -28,7 +28,7 @@ h1{
    bottom:0;
    width:100%;
    height:60px;   /* Height of the footer */
-   background:#6cf;
+   background:white;
 }
 
 
