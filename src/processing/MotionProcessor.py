@@ -17,7 +17,7 @@ class MotionProc:
 		print '[Not connected] action: ' + str(action)
 	
 	def gesture_loop(self):
-		host = '192.168.1.4'
+		host = ''
 		port = 5555
 		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 		s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
