@@ -2,8 +2,10 @@
 
 function setup(){
   
-  var host = "ws://192.168.1.4:9090/ws";
+  var host = "ws://192.168.1.2:9090/ws";
   var socket = new WebSocket(host);
+  
+  console.log('setup called')
 
   // event handlers for websocket
   if(socket){
@@ -52,10 +54,6 @@ function setup(){
     $('#carousel-example-generic').carousel('prev');
   }
 
-  document.getElementById("testButton").addEventListener("click", function(){
-    console.log("pressed!");
-    prevSlide()
-  });
   
 }
 
@@ -86,4 +84,5 @@ function displayt() {
 	document.getElementById("t").innerHTML = y;
 	yy = displayt();
 }
+
 window.onload = setup;
