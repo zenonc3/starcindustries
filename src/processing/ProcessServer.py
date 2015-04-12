@@ -19,13 +19,10 @@ class MainHandler(tornado.web.RequestHandler):
 class WSHandler(tornado.websocket.WebSocketHandler):
   def open(self):
     print 'new connection'
-    self.write_message("Hi, client: connection is made ...")
-    global period_loop
+    self.write_message("Connection established with gesture server")
     global mproc
     mproc.set_callback(self.test)
-#    period_loop = tornado.ioloop.PeriodicCallback(self.test, 500)
-#    period_loop.start()
-#    tornado.ioloop.IOLoop.instance().add_timeout(datetime.timedelta(seconds=5), self.test)
+
 
   def on_message(self, message):
     print 'message received: \"%s\"' % message
@@ -35,13 +32,11 @@ class WSHandler(tornado.websocket.WebSocketHandler):
 
   def on_close(self):
     print 'connection closed'
-#    period_loop.stop()
     
   def test(self, action):
-    
-#    global mproc
-#    print mproc.get_action()
-    self.write_message(str(action))
+	msg = str(action)
+	print 'Sending message: ' + msg
+	self.write_message(msg)
              
   def check_origin(self, origin):
     return True
