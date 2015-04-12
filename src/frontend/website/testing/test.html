@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./bootstrap.min.js"></script>
+	<script src="./test.js"></script>
       
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false" >
         
@@ -32,15 +33,28 @@
             <img id="earth" src="./img/loading2.gif" alt="earth" height="100px" width="100px">
         </div>
         <div class="item">
-          <p>Content
-            </p>
+			<div style="height:200px;">
+			</div>
+			<div id="outer">
+				<table id="rss-feed">
+					<tr>
+						<td class="left">
+							<iframe width="640" height="620" style="border:none;" src="http://output67.rssinclude.com/output?type=iframe&amp;id=984530&amp;hash=c2ed290b10e1bbbb22120e6a5867f568"></iframe>
+						</td>
+						<td class="right">
+							<a class="twitter-timeline" width="500" href="https://twitter.com/SpaceAppsStarc/lists/starc-industries" data-widget-id="586797668359282689">Tweets from https://twitter.com/SpaceAppsStarc/lists/starc-industries</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</td>	
+					</tr>
+				</table> 
+			</div>
         </div>
       </div>
 
 
       <!-- Controls -->
 
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" >
+      <a id="btnRight" onclick="fadein()" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" >
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
