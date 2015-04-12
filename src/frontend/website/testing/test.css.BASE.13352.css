@@ -1,0 +1,61 @@
+html, body{
+    
+    min-height: 100% !important;
+    height: 100%;
+
+}
+
+body{
+    background-image: url("./img/spaceship3_dim3.jpg");
+    background-size:cover;
+}
+
+#logo{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+    opacity: 0.8;
+}
+
+#earth{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+.carousel-indicators{
+    bottom:0;
+    position: absolute;
+    color:#12C9FD
+}
+
+.carousel{
+    height:85%;
+}
+
+.carousel-control .glyphicon-chevron-right{
+    font-size: 1px;
+}
+
+.carousel-control{
+    text-shadow: 0 1px 2px rgba(0,0,0,0);
+    opacity: 0;
+}
+
+#rss-feed {
+	width: 100%;
+	opacity:0.6;
+}
+
+.left {
+	float:left;
+	padding-left:50px;
+}
+
+.right {
+	float:right;
+	padding-right:50px;
+}

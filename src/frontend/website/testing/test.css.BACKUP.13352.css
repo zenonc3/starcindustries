@@ -63,7 +63,7 @@ h1{
 
 #rss-feed {
 	width: 100%;
-
+	opacity:0.6;
 }
 
 #log {
@@ -81,6 +81,7 @@ h1{
 	padding-right:50px;
 }
 
+<<<<<<< HEAD
 .container-outer { 
     overflow-x: hidden; 
     width: 1000px;  
@@ -146,6 +147,7 @@ h1{
     src: url(./font/coolvetica.ttf);
     font-weight: bold;
 }
+=======
 .redsquare {
     background-color: red;
   height: 500px;
@@ -163,16 +165,4 @@ h1{
   height: 500px;
   width: 500px;
 }
-
-#rss-feed .left {
-    opacity:0.6;
-}
-
-#rss-feed .right {
-    opacity:1;
-}
-
-.tableHeader p {
-    font-size: 20;
-    color: White;
-}
+>>>>>>> 47be239ab85cd9ef0cc1cc22b43355726d169dec
