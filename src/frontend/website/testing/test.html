@@ -8,9 +8,9 @@
     <link href="./bootstrap.min.css" rel="stylesheet">
     <link href="./test.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="displayt()">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuedry (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./bootstrap.min.js"></script>
@@ -23,6 +23,7 @@
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
       </ol>
 
       <!-- Wrapper for slides -->
@@ -32,24 +33,123 @@
 >
             <img id="earth" src="./img/loading2.gif" alt="earth" height="100px" width="100px">
         </div>
-        <div class="item">
-			<div style="height:200px;">
-			</div>
-			<div id="outer">
-				<table id="rss-feed">
-					<tr>
-						<td class="left">
-							<iframe width="640" height="620" style="border:none;" src="http://output67.rssinclude.com/output?type=iframe&amp;id=984530&amp;hash=c2ed290b10e1bbbb22120e6a5867f568"></iframe>
-						</td>
-						<td class="right">
-							<a class="twitter-timeline" width="500" href="https://twitter.com/SpaceAppsStarc/lists/starc-industries" data-widget-id="586797668359282689">Tweets from https://twitter.com/SpaceAppsStarc/lists/starc-industries</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-						</td>	
-					</tr>
-				</table> 
-			</div>
+      <!-- Notifications Page -->
+      <div class="item" >
+        <div style="height:200px;">
+        </div>
+        <div id="outer" >
+          <table id="rss-feed">
+  					<tr>
+  						<td class="left">
+  							<iframe width="640" height="620" style="border:none;" src="http://output67.rssinclude.com/output?type=iframe&amp;id=984530&amp;hash=c2ed290b10e1bbbb22120e6a5867f568"></iframe>
+  						</td>
+  						<td class="right">
+  							<a class="twitter-timeline" width="500" href="https://twitter.com/SpaceAppsStarc/lists/starc-industries" data-widget-id="586797668359282689">Tweets from https://twitter.com/SpaceAppsStarc/lists/starc-industries</a>
+  							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  						</td>	
+            </tr>
+          </table> 
         </div>
       </div>
+      <!-- Log and Media Page -->
+      <div class="item" style="height:900px;">
+        <div class="outerscrolllog">
+        <div class="scrolllog">
+          <div align="left">LOG</div>
+          <table border = "1" style="width:80%" float="left">
+            <col width="80">
+            <col width="130">
+            <tr>
+              <th>Log Time/Date</th>
+              <th>Message</th>    
+            </tr>
+            <tr>
+              <td><span id='t' ></span></td>
+              <td>Donec ac felis orci. Integer vitae libero et felis lacinia tempor ac sed purus. Nam et augue a dui blandit auctor. Aenean volutpat volutpat sem, euismod mollis odio euismod ut.</td>
+            </tr>
+            <tr>
+              <td>Sun Apr 12 2015 20:31:50 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Mauris pretium, odio sit amet tincidunt sodales, urna elit laoreet quam, eget maximus sem lorem a risus. Nunc sollicitudin enim eu lorem ultrices dignissim.</td>
+            </tr>
+            <tr>
+              <td>Sun Apr 12 2015 17:11:22 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Curabitur sollicitudin mi eu magna congue porta. Nam ut mauris leo. Nullam feugiat, libero non gravida rhoncus, nunc risus varius sapien, ac pharetra purus leo ac est. </td>
+            </tr>
+            <tr>
+              <td>Sun Apr 12 2015 14:23:08 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Aenean vel semper nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</td>
+            </tr>
+            <tr>
+              <td>Sun Apr 12 2015 10:15:51 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat mollis sagittis. Etiam enim risus, tempor et ex elementum, ultricies rutrum ex.</td>
+            </tr>
+            <tr>
+              <td>Sun Apr 12 2015 08:55:21 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Curabitur sollicitudin mi eu magna congue porta. Nam ut mauris leo. Nullam feugiat, libero non gravida rhoncus, nunc risus varius sapien, ac pharetra purus leo ac est.</td>
+            </tr>
+            <tr>
+              <td>Sat Apr 11 2015 22:09:17 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Nam semper et nunc vel mattis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dapibus eu nibh quis aliquam.</td>
+            </tr>
+            <tr>
+              <td>Sat Apr 11 2015 10:33:22 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Vestibulum sed turpis velit. Etiam nec erat urna. Pellentesque libero nulla, mollis ac molestie et, semper et lacus. Nam ornare fermentum eros sit amet finibus.</td>
+            </tr>
+            <tr>
+              <td>Sat Apr 11 2015 08:50:30 GMT+1200
+              <br>
+              (New Zealand Standard Time)</td>
+              <td>Praesent felis felis, ullamcorper id fermentum sit amet, commodo non turpis. Duis vitae urna a mi imperdiet bibendum. Nulla massa neque, tempus vel tortor et, volutpat auctor ligula. Curabitur tincidunt metus sed consectetur pulvinar.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="outerscrollmedia" style="display: block; float:right;">
+            <div class="scrollmedia">
+                <div align="left">MEDIA</div>
+                <table border = "1" style="width:100%" align="right">
+                  <col width="80">
+                  <col width="130">
+                    <tr>
+                        <th>Time/Date Taken</th>
+                        <th>Media File</th>        
+                    </tr>
+                    <tr>
+                        <td>Mon Apr 13 2015 11:00:31 GMT+1200
+                        <br>
+                        (New Zealand Standard Time)</td>
+                        <td><img class="big" src="./img/media_2windows.jpg" height = "250" width = "400" ></td>
+                    </tr>
+                    <tr>
+                        <td>Sun Apr 12 2015 16:31:50 GMT+1200
+                        <br>
+                        (New Zealand Standard Time)</td>
+                        <td><img class="big" src="./img/media_pod.jpg" height = "250" width = "400" ></td>
+                    </tr>
+                    <tr>
+                        <td>Sun Apr 12 2015 10:55:21 GMT+1200
+                        <br>
+                        (New Zealand Standard Time)</td>
+                        <td><img class="big" src="./img/media_window.jpg" height = "250" width = "400"></td>
+                    </tr>
+                </table>
+            </div> 
+          </div> 
+    </div>
 
 
       <!-- Controls -->
