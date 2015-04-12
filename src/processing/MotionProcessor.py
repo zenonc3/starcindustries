@@ -56,7 +56,7 @@ class MotionProc:
 						gy= float(delimitedVariables[7])
 						gz= float(delimitedVariables[8])
 						#print gx,gy, gz
-						threshold=5;
+						threshold=8.5;
 
 						maxValue = max(gx, gy, gz)
 						minValue = min(gx,gy,gz)
