@@ -10,13 +10,22 @@ body{
 h1{
 	color: #12C9FD;
 }
+.hidden {
+	overflow: hidden;
+	height:600px;
+	width:700px;
+	margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 30px;
+}
 
-div.scroll {
+.scroll {
     background-color: black;
-    width: 1000px;
-    height: 400px;
-    overflow-x: hidden;
-    position: center;
+    height:600px;
+    width:700px;
+    overflow: auto;
+    padding-right:25px;
     color: #12C9FD;
     margin: 0 auto;
 }
