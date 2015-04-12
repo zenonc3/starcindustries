@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./log.css">
 	<title>Starc Industries</title>
 	<script src="./index.js"></script>
 </head>
 
-<body onload = displayct();>
-
+<body onload = displayt();>
 <div id="first">
 	<img src="./img/logo_original.jpg" alt="logo" height="100" width="700">
 </div>
 
 <div id="content">
-    <img src="./img/giphy.gif" alt="earth" height="300" width="300">
+	<p>Logs</p>
+	<br>
+</div> 
+
+<p>overflow:scroll</p>
+<div class="scroll">
+	<table border = "1" style="width:100%" align="center">
+		<col width="80">
+		<col width="5">
+  		<tr>
+		    <th>Log Time/Date</th>
+		    <th>Message</th>		
+  		</tr>
+  		<tr>
+		    <td><span id='t' ></span></td>
+		    <td>Donec ac felis orci. Integer vitae libero et felis lacinia tempor ac sed purus. Nam et augue a dui blandit auctor. Aenean volutpat volutpat sem, euismod mollis odio euismod ut. Fusce vitae velit et metus aliquet finibus et vitae quam. Pellentesque nulla ante, malesuada et porttitor ut, mattis eget turpis. Proin tincidunt felis et purus finibus iaculis. Duis tortor sapien, iaculis a justo quis, aliquet viverra lacus. Aenean volutpat nulla leo, vitae iaculis libero pulvinar sed. Vestibulum volutpat ac urna suscipit tempor. Vestibulum finibus egestas leo, eu finibus dolor accumsan at. Ut egestas suscipit lorem sed sollicitudin. Praesent et nisi vel sem faucibus consequat. Aliquam lobortis consequat enim. Cras vitae egestas lectus.</td>
+  		</tr>
+  		<tr>
+	  		<td>Sun Apr 12 2015 16:31:30 GMT+1200
+	  		<br>
+	  		(New Zealand Standard Time)</td>
+	  		<td>Nulla accumsan tincidunt sodales. Donec nisi erat, dictum id varius non, lobortis ut risus. Ut porttitor justo ut vehicula ullamcorper. Curabitur vitae elit sed lectus aliquam dictum. Ut at justo lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia interdum dui non feugiat. Duis a molestie erat. Duis cursus consectetur ipsum quis fringilla. Nullam nibh odio, ultrices a imperdiet nec, condimentum sit amet mi.</td>
+  		</tr>
+  		<tr>
+	  		<td>Sat Apr 11 2015 11:31:30 GMT+1200
+	  		<br>
+	  		(New Zealand Standard Time)</td>
+	  		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dictum risus, eget consectetur eros. Etiam lacinia lectus ullamcorper nibh tincidunt convallis. Praesent nec diam ornare, condimentum quam posuere, scelerisque erat. Proin vel justo non nulla posuere euismod sit amet sit amet velit. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi non bibendum diam. Nunc quis ipsum ipsum.</td>
+  		</tr>
+	</table>
 </div>
-    
-    
-    
-<div id="footer">
-	<h2> Footer <h2>
-    <p id="demo"></p>
-    <span id='ct' ></span>
-</div>
+
+<p>overflow:hidden</p>
+<div class="hidden">You can use the overflow property when you want to have better control of the layout. The default value is visible.</div>  
         
         
 </body>
