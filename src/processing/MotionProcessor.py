@@ -6,18 +6,15 @@ import time
 
 class MotionProc:
 	
-	def init(self):
+	def __init__(self):
 		self.action = 'nomovement'
-		self.callback = ''
-    
-	def get_action(self):
-		if self.action == 'nomovement':
-			return False
-		else:
-			return self.action
-		
+		self.callback = self.placeholder_callback
+    		
 	def set_callback(self, callbackref):
 		self.callback = callbackref
+        
+	def placeholder_callback(self, action):
+		print '[Not connected] action: ' + str(action)
 	
 	def gesture_loop(self):
 		host = '192.168.1.4'
@@ -59,7 +56,7 @@ class MotionProc:
 						gy= float(delimitedVariables[7])
 						gz= float(delimitedVariables[8])
 						#print gx,gy, gz
-						threshold=5;
+						threshold=8.5;
 
 						maxValue = max(gx, gy, gz)
 						minValue = min(gx,gy,gz)
@@ -74,32 +71,26 @@ class MotionProc:
 						if largest < -threshold and largest==gx:
 							self.action = "left"
 							counting=True
-							print self.action
 							self.callback(self.action)
 						elif largest > threshold-1 and largest==gx:
 							self.action = "right"
 							counting=True
-							print self.action
 							self.callback(self.action)
 						elif largest > threshold-2 and largest==gz: 
 							self.action= "up"
 							counting=True
-							print self.action
 							self.callback(self.action)
 						elif largest < -threshold and largest==gz:
 							self.action="down"
 							counting=True
-							print self.action
 							self.callback(self.action)
 						elif largest < -threshold and largest==gy:
 							self.action="twistleft"
 							counting=True
-							print self.action
 							self.callback(self.action)
 						elif largest > threshold and largest==gy:
 							self.action="twistright"
 							counting=True
-							print self.action
 							self.callback(self.action)
 
 						else:

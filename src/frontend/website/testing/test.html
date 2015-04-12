@@ -10,8 +10,9 @@
   </head>
   <body onload="displayt()">
 
-    <!-- jQuedry (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-1.11.2.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./bootstrap.min.js"></script>
 	<script src="./test.js"></script>
@@ -23,8 +24,11 @@
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
       </ol>
+		
+      <button id="testButton"> test </button>
 
       <!-- Wrapper for slides -->
       <div  class="carousel-inner" role="listbox" height="100%">
@@ -116,6 +120,19 @@
               <td>Praesent felis felis, ullamcorper id fermentum sit amet, commodo non turpis. Duis vitae urna a mi imperdiet bibendum. Nulla massa neque, tempus vel tortor et, volutpat auctor ligula. Curabitur tincidunt metus sed consectetur pulvinar.</td>
             </tr>
           </table>
+
+        </div>
+        <div class="item">
+          <div class="redsquare">
+          </div>
+        </div>
+        <div class="item">
+          <div class="greensquare">
+          </div>
+        </div>
+        <div class="item">
+          <div class="bluesquare">
+          </div>
         </div>
       </div>
       <div class="outerscrollmedia" style="display: block; float:right;">

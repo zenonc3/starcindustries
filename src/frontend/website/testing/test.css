@@ -146,3 +146,20 @@ h1{
     src: url(./font/coolvetica.ttf);
     font-weight: bold;
 }
+.redsquare {
+    background-color: red;
+  height: 500px;
+  width: 500px;
+}
+
+.greensquare {
+    background-color:green;
+  height: 500px;
+  width: 500px;
+}
+
+.bluesquare {
+    background-color: blue;
+  height: 500px;
+  width: 500px;
+}

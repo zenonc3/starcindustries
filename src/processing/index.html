@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebSockets Client</title>  
-  <script src="jquery191.js"></script>
+  <title>WebSockets</title>  
 </head>
 <body>
-Enter text to send to the websocket server:
-<div id="send">
-    <input type="text" id="data" size="100"/><br>
-    <input type="button" id="sendtext" value="send text"/>
-</div>
-<div id="output"></div>
+  <div id="output"></div>
 </body>
 </html>
 <script>
 
-jQuery(function($){
+function actionsWebsocket(){
 
   if (!("WebSocket" in window)) {
     alert("Your browser does not support web sockets");
   }else{
     setup();
   }
+  
 
 
   function setup(){
@@ -31,28 +26,6 @@ jQuery(function($){
     
     var host = "ws://192.168.1.4:9090/ws";
     var socket = new WebSocket(host);
-    //console.log("socket status: " + socket.readyState);   
-    
-    var $txt = $("#data");
-    var $btnSend = $("#sendtext");
-
-    $txt.focus();
-
-    // event handlers for UI
-    $btnSend.on('click',function(){
-      var text = $txt.val();
-      if(text == ""){
-        return;
-      }
-      socket.send(text);
-      $txt.val("");    
-    });
-
-    $txt.keypress(function(evt){
-      if(evt.which == 13){
-        $btnSend.click();
-      }
-    });
 
     // event handlers for websocket
     if(socket){
@@ -62,31 +35,21 @@ jQuery(function($){
       }
 
       socket.onmessage = function(msg){
-        showServerResponse(msg.data);
+        console.log(msg.data);
       }
 
       socket.onclose = function(){
         //alert("connection closed....");
-        showServerResponse("The connection has been closed.");
+        console.log("The connection has been closed.");
       }
 
     }else{
       console.log("invalid socket");
     }
-
-    function showServerResponse(txt){
-      var p = document.createElement('p');
-      p.innerHTML = txt;
-      document.getElementById('output').appendChild(p); 
-    }	
-
-
+    
   }
-
-
+};
   
-
-
-});
+  window.onload = actionsWebsocket;
 
 </script>
