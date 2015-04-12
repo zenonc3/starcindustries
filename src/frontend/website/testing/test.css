@@ -59,3 +59,21 @@ body{
 	float:right;
 	padding-right:50px;
 }
+
+.redsquare {
+    background-color: red;
+  height: 500px;
+  width: 500px;
+}
+
+.greensquare {
+    background-color:green;
+  height: 500px;
+  width: 500px;
+}
+
+.bluesquare {
+    background-color: blue;
+  height: 500px;
+  width: 500px;
+}
