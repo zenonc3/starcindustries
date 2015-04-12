@@ -10,6 +10,10 @@ body{
     background-size:cover;
 }
 
+h1{
+    color: #12C9FD;
+}
+
 #logo{
     
     display: block;
@@ -24,6 +28,18 @@ body{
     margin-left: auto;
     margin-right: auto;
     opacity: 0.8;
+}
+
+#first{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
+    height:100%;
+}
+
+#content{
+    text-align: center;
+    color:#12C9FD;
 }
 
 .carousel-indicators{
@@ -50,6 +66,11 @@ body{
 	opacity:0.6;
 }
 
+#log {
+    width: 100%;
+    opacity: 0.3;
+}
+
 .left {
 	float:left;
 	padding-left:50px;
@@ -60,6 +81,71 @@ body{
 	padding-right:50px;
 }
 
+.container-outer { 
+    overflow-x: hidden; 
+    width: 1000px;  
+    height: 800px;    
+    margin-left: 10%;
+    margin: 0 auto; 
+}
+
+.container-inner { 
+    width: 10000px; 
+}
+
+.carousel-control:hover {
+    opacity:0;
+}
+
+.outerscrolllog {
+    overflow: hidden;
+    height:800px;
+    width:700px!important;
+    position: absolute;
+    opacity:0.6;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 200px;
+    margin-left: 11px;
+}
+
+.outerscrollmedia {
+    overflow: hidden;
+    height:800px;
+    width:600px!important;
+    position: absolute;
+    opacity:0.6;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 200px;
+    margin-left: 1250px;
+
+}
+
+.scrolllog {
+    background-color: #292F33;
+    height:600px;
+    width:800px;
+    overflow: auto;
+    color: #12C9FD;
+    margin: 0 auto;
+}
+
+.scrollmedia {
+    background-color: #292F33;
+    height:600px;
+    width:1000px;
+    overflow: auto;
+    color: #12C9FD;
+    margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/coolvetica.ttf);
+    font-weight: bold;
+}
 .redsquare {
     background-color: red;
   height: 500px;
